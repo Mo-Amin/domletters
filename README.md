@@ -59,7 +59,7 @@ Thanks to [Project Gutenberg](http://gutenberg.org) for the
 text of
 [Tom Swift and His Airship](https://www.gutenberg.org/cache/epub/3005/pg3005.txt),
 from which the file `swift.txt` in this distribution was
-taken.
+taken. The test files also use excerpts from this text.
 
 I couldn't recall how to read a text file from standard input, so I had to use
 [stack overflow](https://stackoverflow.com/questions/25985639/passing-text-file-to-standard-input).
