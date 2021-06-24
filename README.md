@@ -1,5 +1,5 @@
 # domletters — count dominant letters
-<Your Name> and Bart Massey 2021
+Mohamed-Amin Cheaito and Bart Massey 2021
 
 This repository contains a program that counts dominant
 letters in alphabetic words of an ASCII text read from
@@ -29,29 +29,10 @@ upper and lowercase letters as equivalent. Examples:
 
 ## Build and Run
 
-(*These instructions are for a compiled language like
-C++. For an interpreted language like Python, delete these
-instructions and use those below.*)
-
 To build the program, type `make`. This will use the file
 named `Makefile` to compile the program.
 
 To run the program once it is built, say
-
-    ./domletters <input.txt
-
-where `input.txt` is the input file to be processed.
-
-## Build and Run
-
-(*These instructions are for an interpreted language like
-Python. For a compiled language like C++, delete these
-instructions and use those above. Note that your script
-should be marked executable and set up to run on a Linux box
-using a standard interpreter: for example, in Python the
-first line should be something like `#!/usr/bin/python3`.*)
-
-To run the program, say
 
     ./domletters <input.txt
 
@@ -70,6 +51,16 @@ text of
 [Tom Swift and His Airship](https://www.gutenberg.org/cache/epub/3005/pg3005.txt),
 from which the file `swift.txt` in this distribution was
 taken.
+
+I couldn't recall how to read a text file from standard input, so I had to use
+[stack overflow](https://stackoverflow.com/questions/25985639/passing-text-file-to-standard-input).
+Mentioned within program.
+
+## Brief Explanation of Solution
+
+The main gist of my solution is that I go through each letter within the file
+and once I reach a space character I consider that as an evaluation/reset point. 
+
 
 ## License
 
