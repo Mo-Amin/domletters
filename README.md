@@ -44,6 +44,15 @@ When run using the file `sentence.txt` in this distribution,
 the program will produce a dominant letter count of 20. When
 run on `swift.txt` it will produce 71.
 
+
+test.txt will produce 84
+test2.txt will produce 140
+
+For both of these tests I hand checked and it matched the program. For each
+paragraph within test txt files I added the dominant letter count to the side
+(Shouldn't alter answer).
+
+
 ## Acknowledgements
 
 Thanks to [Project Gutenberg](http://gutenberg.org) for the
@@ -59,7 +68,15 @@ Mentioned within program.
 ## Brief Explanation of Solution
 
 The main gist of my solution is that I go through each letter within the file
-and once I reach a space character I consider that as an evaluation/reset point. 
+and once I reach a space character I consider that as an evaluation/reset point.
+As I am checking each letter, I have a flag and if it continues to meet the
+alphabetical word requirements it remains true otherwise it turns false. If the flag is true and the letter is
+alphabetical I add that letter to the vector and keep ahold of it as I may need
+to do more with it later. Once I reach a space and the flag is still true then we had
+an alphabetic word and need to account for the dominant letter and add its
+occurences. However if we reach a space and the flag was false then we have an
+improper word and we just reset the flag and get ready for the next word. No matter the 
+value of the flag we clear the vector so we can repeat this process for the next word. 
 
 
 ## License
