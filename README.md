@@ -45,7 +45,7 @@ the program will produce a dominant letter count of 20. When
 run on `swift.txt` it will produce 71.
 
 
-test.txt will produce 84
+test.txt will produce 84.
 test2.txt will produce 140
 
 For both of these tests I hand checked and it matched the program. For each
